@@ -2,8 +2,8 @@
 //  hyUITests.m
 //  hyUITests
 //
-//  Created by fanyou on 15/11/17.
-//  Copyright © 2015年 fanyou. All rights reserved.
+//  Created by chenjd on 15/11/17.
+//  Copyright © 2015年 chenjd. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

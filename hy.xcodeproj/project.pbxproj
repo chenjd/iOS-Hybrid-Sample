@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F59B1CB71BFC49D400974BE6 /* webapp in Resources */ = {isa = PBXBuildFile; fileRef = F59B1CB61BFC49D400974BE6 /* webapp */; };
 		F5C1652F1BFB2A5E00736CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C1652E1BFB2A5E00736CA9 /* main.m */; };
 		F5C165321BFB2A5E00736CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C165311BFB2A5E00736CA9 /* AppDelegate.m */; };
 		F5C165351BFB2A5E00736CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C165341BFB2A5E00736CA9 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F59B1CB61BFC49D400974BE6 /* webapp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = webapp; path = ../../../github/Hybrid/webapp; sourceTree = "<group>"; };
 		F5C1652A1BFB2A5E00736CA9 /* hy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C1652E1BFB2A5E00736CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5C165301BFB2A5E00736CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		F5C1652C1BFB2A5E00736CA9 /* hy */ = {
 			isa = PBXGroup;
 			children = (
+				F59B1CB61BFC49D400974BE6 /* webapp */,
 				F5C165301BFB2A5E00736CA9 /* AppDelegate.h */,
 				F5C165311BFB2A5E00736CA9 /* AppDelegate.m */,
 				F5C165331BFB2A5E00736CA9 /* ViewController.h */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C1653D1BFB2A5E00736CA9 /* LaunchScreen.storyboard in Resources */,
+				F59B1CB71BFC49D400974BE6 /* webapp in Resources */,
 				F5C1653A1BFB2A5E00736CA9 /* Assets.xcassets in Resources */,
 				F5C165381BFB2A5E00736CA9 /* Main.storyboard in Resources */,
 			);
@@ -415,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fanyoy.hy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenjd.hy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -426,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fanyoy.hy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenjd.hy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +502,7 @@
 				F5C165591BFB2A5F00736CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C1655A1BFB2A5F00736CA9 /* Build configuration list for PBXNativeTarget "hyTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				F5C1655C1BFB2A5F00736CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C1655D1BFB2A5F00736CA9 /* Build configuration list for PBXNativeTarget "hyUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				F5C1655F1BFB2A5F00736CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
