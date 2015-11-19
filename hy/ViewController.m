@@ -102,38 +102,59 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSURL * url = [request URL];
     if ([[url scheme] isEqualToString:@"hybrid"]) {
-        UIAlertController * alertView = [UIAlertController alertControllerWithTitle:@"test" message:@"test" preferredStyle:UIAlertControllerStyleAlert];
         
-
-        
-        NSArray* paramArray = [[url query] componentsSeparatedByString:@"param="];
-        NSString* paramStr = paramArray[1];
-        NSLog(@"Param: %@", paramStr);
-        NSArray* paramArray2 = [paramStr componentsSeparatedByString:@"topage"];
-        NSLog(@"param2: %@", paramArray2[1]);
-        
-        
-
-        
-        NSLog(@"Scheme: %@", [url scheme]);
-        NSLog(@"Host: %@", [url host]);
-        NSLog(@"Port: %@", [url port]);
-        NSLog(@"Path: %@", [url path]);
-        NSLog(@"Relative path: %@", [url relativePath]);
-        NSLog(@"Path components as array: %@", [url pathComponents]);
-        NSLog(@"Parameter string: %@", [url parameterString]);
-        NSLog(@"Query: %@", [url query]);
-        NSLog(@"Fragment: %@", [url fragment]);
+        NSString *actionType = request.URL.host;
+        NSDictionary *actionDict = [self getDicFromUrl : url];
+        [self doActionType:actionType : actionDict];
         return NO;
     }
     return YES;
 }
 
-- (NSDictionary *) encodeUrl : (NSString *)string{
-    return nil;
+//从url中获取web传来的参数
+- (NSDictionary *) getDicFromUrl : (NSURL *)url{
+    NSArray* paramArray = [[url query] componentsSeparatedByString:@"param="];
+    NSString* paramStr = paramArray[1];
+    NSString *jsonDictString = [paramStr stringByRemovingPercentEncoding];
+    NSData *jsonData = [jsonDictString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *e;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:nil error:&e];
+    return dict;
+}
+//根据web的指示，native端相应的做出回应
+-(void) doActionType : (NSString*) type : (NSDictionary*) dict{
+    
+    if ([type isEqualToString:@"forward"]) {
+        [webView goForward];
+    }
+    if([dict[@"type"] isEqualToString: @"webview"]){
+        [self web2Web: dict[@"topage"]];
+    }
+    else if ([dict[@"type"] isEqualToString: @"native"]){
+        [self web2Native];
+    }
+
 }
 
+//Web通过Native新建一个新的Web
+-(void) web2Web : (NSString*) topage{
+    NSBundle *thisBundle = [NSBundle mainBundle];
+    NSString *path = [thisBundle pathForResource:topage ofType:@"html"];
+    NSURL *baseURL = [NSURL fileURLWithPath:path];
+    NSURLRequest *urlReq = [NSURLRequest requestWithURL:baseURL];
+    [webView loadRequest:urlReq];
+}
 
+//Web通过Native新建一个新的Native页面
+-(void) web2Native{
+    UIAlertController * alertView = [UIAlertController alertControllerWithTitle:@"Native控件" message:@"通过Web页面创建的Native控件" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alertView addAction:defaultAction];
+    [self presentViewController:alertView animated:YES completion:nil];
+
+}
 
 /////////#endregion
 

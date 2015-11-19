@@ -29,8 +29,7 @@ var _getHybridUrl = function (params) {
     }
     if (params.param) {
         paramStr = typeof params.param == 'object' ? JSON.stringify(params.param) : params.param;
-        // url += '&param=' + encodeURIComponent(paramStr);
-                url += '&param=' + paramStr;
+        url += '&param=' + encodeURIComponent(paramStr);
     }
     return url;
 };
