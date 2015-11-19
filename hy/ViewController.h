@@ -13,6 +13,7 @@
     UIWebView *webView;
     NSMutableString *msg;
     UITextField *msgText;
+    UIButton *nativeCallJsBtn;
 }
 
 
