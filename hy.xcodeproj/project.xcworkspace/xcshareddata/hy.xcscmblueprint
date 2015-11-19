@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "08CFF7A86C2C065511C4DD11614097A380B29084",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "08CFF7A86C2C065511C4DD11614097A380B29084" : 0,
+    "12A722981FF0156C650B4B97DC99F3A97396EAD2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "013AA4BF-2636-48D9-A17F-95D5722C32E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "08CFF7A86C2C065511C4DD11614097A380B29084" : "hy\/",
+    "12A722981FF0156C650B4B97DC99F3A97396EAD2" : "..\/github\/Hybrid"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "hy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "hy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chenjd\/iOS-Hybrid-Sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "08CFF7A86C2C065511C4DD11614097A380B29084"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yexiaochai\/Hybrid.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12A722981FF0156C650B4B97DC99F3A97396EAD2"
+    }
+  ]
+}
