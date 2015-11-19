@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F59B1CB71BFC49D400974BE6 /* webapp in Resources */ = {isa = PBXBuildFile; fileRef = F59B1CB61BFC49D400974BE6 /* webapp */; };
+		F59B1CB91BFE40B900974BE6 /* webapp in Resources */ = {isa = PBXBuildFile; fileRef = F59B1CB81BFE40B900974BE6 /* webapp */; };
 		F5C1652F1BFB2A5E00736CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C1652E1BFB2A5E00736CA9 /* main.m */; };
 		F5C165321BFB2A5E00736CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C165311BFB2A5E00736CA9 /* AppDelegate.m */; };
 		F5C165351BFB2A5E00736CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C165341BFB2A5E00736CA9 /* ViewController.m */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F59B1CB61BFC49D400974BE6 /* webapp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = webapp; path = ../../../github/Hybrid/webapp; sourceTree = "<group>"; };
+		F59B1CB81BFE40B900974BE6 /* webapp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webapp; sourceTree = "<group>"; };
 		F5C1652A1BFB2A5E00736CA9 /* hy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C1652E1BFB2A5E00736CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5C165301BFB2A5E00736CA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		F5C1652C1BFB2A5E00736CA9 /* hy */ = {
 			isa = PBXGroup;
 			children = (
-				F59B1CB61BFC49D400974BE6 /* webapp */,
+				F59B1CB81BFE40B900974BE6 /* webapp */,
 				F5C165301BFB2A5E00736CA9 /* AppDelegate.h */,
 				F5C165311BFB2A5E00736CA9 /* AppDelegate.m */,
 				F5C165331BFB2A5E00736CA9 /* ViewController.h */,
@@ -246,8 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59B1CB91BFE40B900974BE6 /* webapp in Resources */,
 				F5C1653D1BFB2A5E00736CA9 /* LaunchScreen.storyboard in Resources */,
-				F59B1CB71BFC49D400974BE6 /* webapp in Resources */,
 				F5C1653A1BFB2A5E00736CA9 /* Assets.xcassets in Resources */,
 				F5C165381BFB2A5E00736CA9 /* Main.storyboard in Resources */,
 			);
